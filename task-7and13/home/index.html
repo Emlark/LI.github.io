@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width,initial-scale=1.0,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <title>首页</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <link href="show-leftList.css" rel="stylesheet" type="text/css">
+    <script>
+        function myfunc(){
+        var showLeft = document.getElementById('showLeft');
+        var leftCont = document.getElementById('leftCont');
+        var rightCont= document.getElementById('rightCont');
+
+            if (rightCont.classList.contains("left-zero") == true) {
+                rightCont.classList.remove("left-zero");
+                rightCont.classList.add("body-toRight");
+                leftCont.classList.remove("left-pos");
+                leftCont.classList.add("left-zero");
+            }
+            else {
+                rightCont.classList.add("left-zero");
+                leftCont.classList.add("left-pos");
+                rightCont.classList.remove("body-toRight");
+                leftCont.classList.remove("left-zero");
+            }
+        }
+    </script>
+</head>
+<body >
+
+<nav class="left-list left-pos" id="leftCont">
+    <header></header>
+    <div class="navList">
+
+    <a href="#" target="_blank" class="icon1">公告</a>
+    <div class="icon-pionter">&rsaquo;</div>
+    </div>
+    <div class="navList">
+    <a href="#" target="_blank" class="icon2">设置</a>
+        <div class="icon-pionter">&rsaquo;</div>
+    </div>
+    <div class="navList">
+    <a href="#" target="_blank" class="icon3">帮助</a>
+        <div class="icon-pionter">&rsaquo;</div>
+    </div>
+    <div class="navList">
+    <a href="#" target="_blank" class="icon4">关于</a>
+        <div class="icon-pionter">&rsaquo;</div>
+    </div>
+
+</nav>
+<div class="body-style left-zero" id="rightCont">
+<header>
+  <div class="img1">
+      <button id="showLeft" onclick="myfunc()">
+      <img src="https://github.com/Emlark/Mouz.github.io/blob/master/images/a03.png?raw=true" style="width:.17rem;height:.13rem;"/>
+      </button>
+  </div>
+
+</header>
+
+<main>
+
+ <div class="word1">上次游戏: 捉鬼猜词版
+ <div class="enter">
+     <button onclick="location.href='https://emlark.github.io/EMO/'">
+     <img src="https://github.com/Emlark/Mouz.github.io/blob/master/images/07.png?raw=true" style="width:.12rem;height:.2rem;">
+     </button>
+ </div>
+ </div>
+
+
+  <div class="version">
+
+  <div class="game">
+    捉鬼游戏
+  </div>
+          <div class="parent ">
+      <div class="enter1">
+          <button onclick="location.href='https://emlark.github.io/EMO/'">
+              <img src="https://github.com/Emlark/Mouz.github.io/blob/master/images/11.png?raw=true" style="width:14px;height:27px;">
+          </button>
+      </div>
+
+
+      <div class="vers">
+          <button class="btn-block"  onclick="location.href='https://emlark.github.io/EMO/'">
+              简化版</button>
+      </div>
+      <div style="width:100%;text-align:center;font-size:.13rem;color:#787878;">
+     <span> 有1133个用户正在玩此款游戏</span>
+      </div>
+              <div class="vers">
+          <button class="btn-block" style="height:100%" onclick="location.href='https://emlark.github.io/EMO/'">
+              猜词版</button>
+      </div>
+              <div style="width:100%;text-align:center;font-size:.13rem;color:#787878;">
+                  <span> 有1133个用户正在玩此款游戏</span>
+              </div>
+  <div class="vers">
+    <button class="btn-block" style="height:100%" onclick="location.href='https://emlark.github.io/EMO/'">
+        白痴版</button>
+  </div>
+              <div style="width:100%;text-align:center;font-size:.13rem;color:#787878;">
+                  <span> 有1133个用户正在玩此款游戏</span>
+              </div>
+          <div class="vers">
+              <button class="btn-block" style="height:100%" onclick="location.href='https://emlark.github.io/EMO/'">
+                  困难版</button>
+          </div>
+                  <div style="width:100%;text-align:center;font-size:.13rem;color:#787878;">
+                      <span> 有11个用户正在玩此款游戏</span>
+                  </div>
+
+   <div class="round">
+       <div class="round1" style="background-color:#29BDE0;"></div>
+       <div class="round1" style="background-color:#F0F0F0;"></div>
+       <div class="round1" style="background-color:#F0F0F0;"></div>
+       <div class="round1" style="background-color:#F0F0F0;"></div>
+   </div>
+   </div>
+  </div>
+</main>
+</div>
+</body>
+</html>
