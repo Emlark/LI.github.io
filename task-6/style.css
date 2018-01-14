@@ -1,0 +1,318 @@
+html {
+    font-size: 625%;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+}
+
+body {
+    margin: 0;
+    padding-bottom: 65px;
+}
+
+ a {
+     display: block;
+}
+ a:hover {
+    text-decoration: none;
+}
+ li {
+     text-align:center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    margin: 0;
+    padding: 3px 4px;
+    background-color: #5FC0CD;
+    color:white;
+
+
+}
+.btn-group1{
+    display: flex;
+    background-color: #55AFB3;
+    height: 40px;
+    width: 1.85rem;
+    margin: 0 auto;
+    line-height: 40px;
+    border-radius: 9px;
+    position: relative;
+}
+
+ button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 9px;
+    background: transparent;
+}
+.btn1 {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 40px;
+    font-size: 0.2rem;
+}
+
+.btn1:hover {
+    background-color: #55A8B3;
+}
+
+.btn2 {
+    margin: 0;
+    padding: 0;
+    width: 1rem;
+    height: 40px;
+    font-size: 0.2rem;
+    background: #fff;
+    color: #5FC0CD;
+    position: absolute;
+    right: 0;
+}
+
+
+.icon1 {
+    position: absolute;
+    right: .1rem;
+    top: .01rem;
+    width: 42px;
+    height: 44px;
+    background-position: -150px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.5,.5);
+}
+
+main {
+    height: 100%;
+    width: 100%;
+}
+
+.navv {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #E1E5E7;
+    display: flex;
+
+}
+
+.bt1 {
+    flex: 0 0 33.3%;
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: .1rem 0;
+    border-right: 1px solid #E1E5E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt2 {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: .02rem 0;
+    border-right: 1px solid #E1E5E7;
+    flex: 0 0 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt3 {
+    height: 45px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 0 0 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.list0 {
+    height: 1.2rem;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E1E5E7;
+
+}
+
+.list1 {
+    display: flex;
+    align-items: center;
+    font-size: .15rem;
+    color: #999;
+    margin: 0 .2rem;
+    padding: 0;
+    position: absolute;;
+    top: .1rem;
+}
+
+.list2 {
+    margin:0;
+    font-size: .15rem;
+    width:1.5rem;
+    white-space: nowrap;
+
+}
+
+.list3 {
+    position: absolute;
+    right: .25rem;
+    font-size: .15rem;
+    font-weight: bold;
+    color: #E63B0E;
+    top: -1px;
+    display: flex;
+    align-items: center;
+}
+
+
+.list4 {
+    display: flex;
+    align-items: center;
+    font-size: .15rem;
+    color: #999;
+    margin: 0 .2rem;
+    padding: 0;
+    position: absolute;;
+    bottom: .1rem;
+}
+
+
+
+
+.icono {
+    height: 24px;
+    width: 24px;
+    background-position: -60px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.5,.5);
+
+}
+
+
+.iconp {
+    height: 23px;
+    width: 19px;
+    background-position: -30px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.5,.5);
+}
+
+
+.cont {
+    position: relative;
+    width: 100%;
+}
+
+.pp {
+    margin-left: .5rem;
+    width: 37%;
+    height: 21px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #F8FAFB;
+    height: 65px;
+    border-top: 1px solid #E1E5E7;
+  
+}
+
+
+.foot {
+    height: 65px;
+    width: 100%;
+    position: relative;
+}
+.botm {
+    margin:2px auto;
+    padding:0;
+    height: 60px;
+    width: 60px;
+    position: relative;
+}
+
+.botm1 {
+    width: 46px;
+    height: 60px;
+    position: absolute;
+    left: 23%;
+    top: 0;
+    text-align: center;
+    color: #5FC0CD;
+    text-decoration: none;
+}
+.icon2 {
+    height: 40px;
+    width: 46px;
+    background-position: -200px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.6,.6);
+}
+
+
+
+
+
+
+.botm2 {
+    position: absolute;
+    top: -17px;
+    left: -17px;
+}
+.icon3{
+    margin: 0;
+    padding: 0;
+    height: 94px;
+    width: 94px;
+    background-position: -250px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.638,.638);
+
+}
+.botm3 {
+    width: 42px;
+    height: 60px;
+    position: absolute;
+    right: 23%;
+    top: 0;
+    text-align: center;
+    color: #999999;
+    text-decoration: none;
+}
+
+.icon4 {
+    height: 40px;
+    width: 42px;
+    background-position: -100px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(.6,.6);
+}
+
+

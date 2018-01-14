@@ -1,0 +1,157 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 625%;
+  overflow: auto; }
+
+body {
+  margin: 0;
+  padding-bottom: 1.25rem;
+  background-color: #29BDE0; }
+
+button {
+  display: block;
+  padding: 0 1px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; }
+
+img {
+  display: inline-block; }
+
+.btn-block {
+  width: 100%;
+  height: 100%; }
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  margin: 0;
+  padding: 3px 10px;
+  background-color: #29BDE0; }
+  header p {
+    margin: 0 .8rem;
+    padding: 0;
+    line-height: .46rem;
+    font-size: .2rem;
+    text-align: center;
+    color: #fff; }
+  header .p-left {
+    float: left;
+    padding-top: .13rem; }
+  header .p-right {
+    float: right;
+    padding-top: .13rem; }
+
+.fir {
+  position: relative;
+  margin: 0;
+  padding: 0 .4rem;
+  height: .5rem;
+  line-height: .5rem;
+  color: #464646;
+  background-color: #B9E9F5; }
+  .fir .thi {
+    margin: 0;
+    padding: 0;
+    width: 50vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .fir .music {
+    position: absolute;
+    right: .07rem;
+    top: .12rem;
+    width: .26rem;
+    height: .26rem;
+    background-image: url(https://github.com/Emlark/Mouz.github.io/blob/master/images/c.png?raw=true);
+    background-position: 0 0;
+    background-size: .26rem .26rem; }
+
+.triang {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+  border-top: .12rem solid #B9E9F5;
+  border-right: .06rem solid transparent;
+  border-left: .06rem solid transparent; }
+
+.sec {
+  margin: 0;
+  padding-left: .7rem;
+  height: .3rem;
+  line-height: .3rem;
+  font-size: .14rem;
+  color: #fff; }
+
+.box-0 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center; }
+  .box-0 .box {
+    margin: .15rem 3vw 0 3vw;
+    width: 25vw; }
+    .box-0 .box:hover .hov {
+      opacity: 1; }
+  .box-0 .user1 {
+    width: 100%;
+    border: 3px solid #fff;
+    background-color: #F5C97B; }
+    .box-0 .user1 .character {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 18vw;
+      font-size: .16rem;
+      justify-content: center;
+      align-items: center; }
+    .box-0 .user1 .num {
+      width: 100%;
+      height: 7vw;
+      line-height: 7vw;
+      color: #fff;
+      font-size: .1rem;
+      text-align: center;
+      background-color: #83B09A; }
+  .box-0 .hov {
+    display: flex;
+    margin-top: .15rem;
+    padding: 0;
+    width: 100%;
+    background-color: #29BDE0;
+    opacity: 0; }
+  .box-0 .image {
+    display: flex;
+    margin: 0 3%;
+    width: 5vw;
+    height: 5vw;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center; }
+
+footer {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1.25rem;
+  padding: .20rem .4rem .25rem .4rem;
+  background-color: #29BDE0; }
+  footer .vote {
+    display: flex;
+    height: 100%;
+    background-color: #FBB435;
+    justify-content: center;
+    align-items: center; }
+    footer .vote button {
+      font-size: .28rem;
+      color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

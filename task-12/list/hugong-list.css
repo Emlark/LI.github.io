@@ -1,0 +1,309 @@
+.flex-center, .list0, .list0 .list1, .list0 .list3, .list0 .list4 {
+  display: flex;
+  align-items: center; }
+
+html {
+  font-size: 625%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  margin: 0;
+  padding-bottom: 65px; }
+
+a {
+  display: block; }
+  a:hover {
+    text-decoration: none; }
+
+li {
+  text-align: center; }
+
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 46px;
+  margin: 0;
+  padding: 3px 4px;
+  background-color: #5FC0CD;
+  color: #fff; }
+
+.btn-group1 {
+  display: flex;
+  background-color: #55AFB3;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  border-radius: 9px;
+  position: relative; }
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 9px;
+  background: transparent; }
+
+.btn1 {
+  margin: 0;
+  padding: 0;
+  height: 40px; }
+
+.btn1:hover {
+  background-color: #55A8B3; }
+
+.btn2 {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  background: #fff;
+  color: #5FC0CD;
+  position: absolute;
+  right: 0; }
+
+.icon1 {
+  position: absolute;
+  right: .1rem;
+  top: .01rem;
+  width: 42px;
+  height: 44px;
+  background-position: -150px 0;
+  background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+  transform: scale(0.5, 0.5); }
+
+main {
+  height: 100%;
+  width: 100%; }
+
+.navv {
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #E1E5E7;
+  display: flex; }
+
+@media (max-width: 500px) {
+  .nav-word {
+    font-size: .11rem; }
+
+  .btn-group1 {
+    width: 1rem; }
+
+  .btn1, .btn2 {
+    font-size: 0.15rem;
+    width: .5rem; } }
+@media (min-width: 500px) {
+  .nav-word {
+    font-size: .18rem; }
+
+  .btn-group1 {
+    width: 1.85rem; }
+
+  .btn1, .btn2 {
+    font-size: 0.2rem;
+    width: 1rem; } }
+.drop-down {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+
+.drop-btn {
+  border: none;
+  background: #fff;
+  display: block;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  padding: 0; }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #999; }
+
+.dropdown-menu a:hover {
+  color: #000;
+  background-color: #f1f1f1; }
+
+.drop-down:hover .dropdown-menu {
+  display: block; }
+
+.caret {
+  border-top: 5px solid #000;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  z-index: 15;
+  border-top: 1px solid #E1E5E7; }
+
+li {
+  list-style-type: none;
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
+.bt1 {
+  flex: 0 0 33.3%;
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #E1E5E7; }
+
+.bt2 {
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #E1E5E7;
+  flex: 0 0 33.3%; }
+
+.bt3 {
+  height: 45px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 0 0 33.3%; }
+
+.list0 {
+  height: 1.2rem;
+  width: 100%;
+  margin: 0;
+  position: relative;
+  border-bottom: 1px solid #E1E5E7; }
+  .list0 .list1 {
+    font-size: 0.15rem;
+    color: #999;
+    margin: 0 .2rem;
+    padding: 0;
+    position: absolute;
+    top: .1rem; }
+  .list0 .list3 {
+    position: absolute;
+    right: .25rem;
+    font-size: 0.15rem;
+    font-weight: bold;
+    color: #E63B0E;
+    top: -1px; }
+  .list0 .list4 {
+    font-size: 0.15rem;
+    color: #999;
+    margin: 0 .2rem;
+    padding: 0;
+    position: absolute;
+    bottom: .1rem; }
+  .list0 .icono {
+    height: 24px;
+    width: 24px;
+    background-position: -60px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(0.5, 0.5); }
+  .list0 .iconp {
+    height: 23px;
+    width: 19px;
+    background-position: -30px 0;
+    background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+    transform: scale(0.5, 0.5); }
+  .list0 .cont {
+    position: relative;
+    width: 100%; }
+  .list0 .pp {
+    margin-left: .5rem;
+    width: 37%;
+    height: 21px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1%; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #F8FAFB;
+  height: 65px;
+  border-top: 1px solid #E1E5E7; }
+
+.foot {
+  height: 65px;
+  width: 100%;
+  position: relative; }
+
+.botm {
+  margin: 2px auto;
+  padding: 0;
+  height: 60px;
+  width: 60px;
+  position: relative; }
+
+.botm1 {
+  width: 46px;
+  height: 60px;
+  position: absolute;
+  left: 23%;
+  top: 0;
+  text-align: center;
+  color: #5FC0CD;
+  text-decoration: none;
+  font-size: 0.15rem; }
+
+.icon2 {
+  height: 40px;
+  width: 46px;
+  background-position: -200px 0;
+  background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+  transform: scale(0.6, 0.6); }
+
+.botm2 {
+  position: absolute;
+  top: -17px;
+  left: -17px; }
+
+.icon3 {
+  margin: 0;
+  padding: 0;
+  height: 94px;
+  width: 94px;
+  background-position: -250px 0;
+  background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+  transform: scale(0.638, 0.638); }
+
+.botm3 {
+  width: 42px;
+  height: 60px;
+  position: absolute;
+  right: 23%;
+  top: 0;
+  text-align: center;
+  color: #999;
+  text-decoration: none;
+  font-size: 0.15rem; }
+
+.icon4 {
+  height: 40px;
+  width: 42px;
+  background-position: -100px 0;
+  background-image: url(https://raw.githubusercontent.com/Emlark/EMO/6fc7164080d520547f96625439dbdec2930c133b/src/img.png);
+  transform: scale(0.6, 0.6); }
+
+/*# sourceMappingURL=hugong-list.css.map */

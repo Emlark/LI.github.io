@@ -1,0 +1,130 @@
+$bg-color : rgb(239,240,244);
+$t-blue:rgb(95,192,205);
+$word-color: #fff!default;
+$t-width: 100%;
+
+.mar{
+  margin:0;
+  padding:0;
+}
+
+html{
+  @extend .mar;
+  height:100%;
+  background-color:$bg-color;
+  overflow:hidden;
+}
+
+body{
+  @extend .mar;
+  height:100%;
+}
+
+
+
+a{
+  text-decoration:none;
+}
+
+header{
+  background:$t-blue;
+  padding:3px 0;
+  margin:0;
+  text-align:center;
+  line-height:40px;
+  height:40px;
+  color:$word-color;
+  position:relative;
+
+
+
+      .register{
+        @extend .mar;
+        font-size:1em;
+        line-height: 40px;
+        height:40px;
+        cursor:pointer;
+        border:0;
+        background-color:$t-blue;
+        color: $word-color;
+        outline:none;
+        position:absolute;
+        top:3px;
+        left:10px;
+      }
+
+      .login{
+        font-size:1.2em;
+        font-weight:bold;
+      }
+
+      .close{
+        @extend .mar;
+        font-size:1em;
+        cursor:pointer;
+        border:0;
+        background-color:$t-blue;
+        color: $word-color;
+        line-height:40px;
+        height:40px;
+        outline:none;
+        position:absolute;
+        top:3px;
+        right:10px;
+      }
+
+}
+
+.log {
+  border:0;
+  width:$t-width;
+  height:50px;
+  margin-top:10px;
+  background-color: #fff;
+  padding-left: 60px;
+  position:relative;
+  box-sizing:border-box;
+  cursor:text;
+
+        .icon{
+          position:absolute;
+          left:0;
+          top:12px;
+          border-right:1px solid rgb(234,237,238);
+          text-align:center;
+          padding:3px 22px;
+          margin:0;
+          width:14px;
+          height:20px;
+          cursor:text;
+        }
+
+
+         .enter{
+            padding-left:20px;
+            border:0;
+            outline:none;
+            width:$t-width;
+            height:48px;
+         }
+}
+
+.btn{
+  background-color:$t-blue;
+  height:52px;
+  line-height:52px;
+  margin-top:10px;
+  padding:0;
+  width:$t-width;
+  border:0;
+  font-size:1.2em;
+  font-weight:bold;
+  color:#fff;
+  outline:none;
+  cursor: pointer;}
+
+.forget{
+  margin:13px 11px;
+  padding:0;
+  font-size:.9em;
+  float:right;}
