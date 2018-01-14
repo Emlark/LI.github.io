@@ -1,0 +1,40 @@
+/*清除浮动*/
+.clear {
+    clear: both; }
+
+/*清除浮动--伪类*/
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both; }
+
+
+.p-left {
+    float: left; }
+
+.p-right {
+    float: right; }
+
+
+/*图片自适应*/
+.img-self-adapt {
+    display: inline-block;
+    max-width: 100%;
+    height: auto; }
+
+
+/*flex对齐*/
+.flex-center {
+    display: flex;
+    align-items: center; }
+
+
+
+
+/*table式垂直居中*/
+.table-style-vert-center {
+    display: table; }
+
+.table-style-vert-center-son {
+    display: table-cell;
+    vertical-align: middle; }
