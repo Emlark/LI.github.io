@@ -1,6 +1,14 @@
 html {
   font-size: 625%; }
 
+a{
+  color:#fff;
+}
+
+a:hover{
+  color:#fff;
+}
+
 header {
   background-color: #fff;
   position: relative;

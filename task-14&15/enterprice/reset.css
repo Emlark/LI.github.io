@@ -1,0 +1,24 @@
+/* reset */
+html{margin:0;padding:0;font-size:625%;overflow:auto;}
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;}   ol,ul{margin:0; padding:0;}
+
+dl,ul,ol,menu,li {list-style:none}   /* 重置类表前导符号为onne,menu在HTML5中有效 */
+
+input,select,textarea,button {vertical-align:middle}  /* 重置表单控件垂直居中*/
+
+button {border:0 none;outline:none;background-color:transparent;cursor:pointer}  /* 重置表单button按钮效果 */
+
+body {background:#fff;overflow-x: hidden;}   /* 重置body 页面背景为白色 */
+
+th,td,input,select,textarea,button {font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */
+
+table {border-collapse:collapse;}    /* 重置table属性 */
+
+
+/* 页面设置 */
+
+/* 取消a标签点击后的虚线框 */
+a {outline: none;text-decoration:none}
+/*a:active, a:hover {text-decoration:none}   !* 重置链接a标签的鼠标滑动效果 *!*/
+
+

@@ -1,30 +1,6 @@
-html{
-    font-size:625%;
-    margin:0;
-    padding:0;
-    overflow:auto;
-    height:100%;
-}
+
 body{
     background-color:#fafafa;
-    margin:0;
-    height:100%;
-}
-a{
-    color:#fff;
-}
-
-a:hover{
-    color:#fff;
-}
-
-.left-list-item>a{
-    color: #29B078;
-}
-
-.left-list-item>a:hover{
-    color: #FF650E;
-    text-decoration: none;
 }
 
 
@@ -34,12 +10,7 @@ main{
 
 
 
-.nav-1{
-    background-color:#29B078;
-}
-
-
-.nav-3{
+.nav-a{
     height:.7rem;
     line-height:.7rem!important;
     margin:0;
@@ -47,7 +18,7 @@ main{
     color:#fff!important;
     text-align:center;
 }
-.nav-3:hover{
+.nav-a:hover{
     background-color:#26A26F!important;
     border-bottom:3px solid #fff;
     color:#fff;
@@ -55,45 +26,21 @@ main{
     border-radius:0;
 }
 
-
-
-
-.navbar-nav {
-    margin: 0;
-}
 @media(min-width:768px){
-    .nav-3 {
+    .nav-a {
         width:.7rem;
     }
-    .navbar-nav {
-        float: right;
-        margin: 0;
-    }
-
 }
 
 
-.navbar-default .navbar-toggle{
-    border-color: transparent;
+.left-list-item>a{
+    color: #29B078;
 }
 
-
-.icon-bar {
-    background-color: #fff!important;
+.left-list-item>a:hover{
+    color: #FF650E;
+    text-decoration: none;
 }
-
-.navbar-toggle {
-    background-color: transparent!important;
-    top:.1rem;
-    margin-right:0!important;
-}
-
-
-.navbar-header{
-    height:.7rem;
-    line-height:.7rem;
-}
-
 
 
 
@@ -191,189 +138,12 @@ main{
     line-height:.2rem;
 }
 
-.word-0{
-    margin-top:.2rem;
-    margin-bottom:.2rem;
-    display:flex;
-    align-items:center;
-}
-
-.word-1{
-    color:#000000;
-}
-
-.word-1:hover{
-    text-decoration: none;
-    color:#000000;
-}
-
-.word-2{
-color: #82D0B0;
-}
-
-.word-2:hover{
-    text-decoration: none;
-    color:#82D0B0;
-}
-/*.word-3{*/
-    /*font-size:.2rem;   //x*/
-    /*color:#fff;*/
-/*}*/
-
-/*.word-4{       //x*/
-    /*display:flex;*/
-    /*color:#fff;*/
-/*}*/
-
-/*.word-4-1{*/
-    /*text-align: center;*/
-    /*min-width:.6rem;*/
-/*}*/
-
-
-/*.word-4-2{*/
-    /*border-left:1px solid #fff;*/
-    /*border-right:1px solid #fff;*/
-    /*text-align: center;*/
-    /*min-width:.8rem;*/
-    /*padding:0 .05rem;*/
-    /*margin:0 .05rem;*/
-
-/*}*/
-
-/*.word-4-3{*/
-    /*text-align: center;*/
-    /*min-width:.124rem;*/
-    /*padding-right: .4rem;*/
-/*}*/
-
-/*.word-4-4{*/
-    /*display:block;*/
-    /*padding:.05rem 0;*/
-    /*white-space: nowrap;*/
-/*}*/
-
-
-/*.word-5{*/
-    /*text-align:center;*/
-    /*font-weight:bold;*/
-    /*color:#5CD286;*/
-    /*line-height:.3rem;*/
-/*}*/
-
-.bottom-0{
-    width:100%;
-    background-color:#29B078;
-}
-
-.bottom-0-1{
-    padding:.3rem;
-}
-
-
-.bottom-0-2{
-    height:1.7rem;
-}
-
-
-
-@media (min-width: 1201px) {
-    .bottom-0-2 {
-        display:flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-    }
-    .bottom-0-1{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        height:1.7rem;
-
-    }
-}
-@media  (min-width: 992px) {
-    .bottom-0-2 {
-        display:flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-    }
-    .bottom-0-1{
-        display:flex;
-        flex-direction:column;
-        justify-content:space-between;
-        height:1.7rem;
-    }
-}
-
-
-@media (min-width: 768px) {
-    .bottom-0-2 {
-        display:flex;
-    }
-
-}
-@media (max-width: 500px) {
-    .bottom-0-2 {
-        display:flex;
-    }
-
-}
 
 
 
 
 
 
-.bottom-1{
-    border-top:1px solid #5CD286;
-    background-color:#29B078;
-    min-height: .3rem;
-}
-
-
-footer{
-    position: relative;
-    bottom:0;
-    left:0;
-    right:0;
-    width:100%;
-}
 
 
 
-
-
-.col-xs-1-1-0,
-.col-sm-1-1-0,
-.col-md-1-1-0,
-.col-lg-1-1-0 {
-    position: relative;
-    min-height: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.col-xs-9 {
-    width: 75%;
-    float: left;
-}
-
-@media (min-width: 768px) {
-    .col-sm-9 {
-        width: 75%;
-        float: left;
-    }
-}
-@media (min-width: 992px) {
-    .col-md-9 {
-        width: 75%;
-        float: left;
-    }
-}
-@media (min-width: 1200px) {
-    .col-lg-9 {
-        width: 75%;
-        float: left;
-    }
-}

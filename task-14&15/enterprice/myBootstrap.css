@@ -1,4 +1,55 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+a {
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+img {
+    border: 0;
+}
+
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+html {
+    /*font-size: 10px;*/
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
 footer,
 header,
 main,
@@ -6,16 +57,36 @@ menu,
 nav {
     display: block;
 }
+button{
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+button{
+    text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
 
-
-
-
-
-
-
-
-
-
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
 
 
 
@@ -117,12 +188,12 @@ nav {
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
+   /*去除了margin-bottom值，去除了边框*/
 }
 @media (min-width: 768px) {
     .navbar {
         border-radius: 4px;
+
     }
 }
 @media (min-width: 768px) {
@@ -131,8 +202,9 @@ nav {
     }
 }
 .navbar-collapse {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/    /* 去除padding*/
+
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 1px solid transparent;
@@ -148,6 +220,7 @@ nav {
         border-top: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
+        float:right;
     }
     .navbar-collapse.collapse {
         display: block !important;
@@ -198,35 +271,8 @@ nav {
         margin-left: -15px;
     }
 }
-.navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 8px;
-    margin-right: 15px;
-    margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
-}
-.navbar-toggle:focus {
-    outline: 0;
-}
-.navbar-toggle .icon-bar {
-    display: block;
-    width: 22px;
-    height: 2px;
-    border-radius: 1px;
-}
-.navbar-toggle .icon-bar + .icon-bar {
-    margin-top: 4px;
-}
-@media (min-width: 768px) {
-    .navbar-toggle {
-        display: none;
-    }
-}
+
+
 .navbar-nav {
     margin: 7.5px -15px;
 }
@@ -293,7 +339,7 @@ nav {
 }
 
 .navbar-default {
-    background-color: #f8f8f8;
+    background-color: #29B078;
     border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -332,10 +378,10 @@ nav {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: #2E8B57;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+    background-color: #fff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -411,7 +457,6 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .container-fluid:after,
 .row:after,
 .nav:after,
-.navbar:after,
 .navbar:after,
 .navbar-header:after,
 .navbar-collapse:after{
@@ -944,18 +989,79 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .breadcrumb {
     padding: 8px 15px;
     margin-bottom: 20px;
+    margin-top: 20px;
     list-style: none;
-    background-color: #f5f5f5;
+    background-color: transparent;
     border-radius: 4px;
 }
 .breadcrumb > li {
     display: inline-block;
 }
+.breadcrumb > li a{
+    color:#777;
+}
 .breadcrumb > li + li:before {
     padding: 0 5px;
     color: #ccc;
-    content: "/\00a0";
+    content: ">";
 }
 .breadcrumb > .active {
-    color: #777;
+    color: #82D0B0;
+}
+
+/*将一下部分放在最后，样式才起作用，且兼容*/
+
+
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 17px 10px; /*  改变icon-bar的间距及颜色，设置了navbar-toggle：hover的颜色*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    /*border: 1px solid transparent;*/
+    border-radius: 4px;
+    top:.09rem;
+}
+
+
+
+
+.navbar-toggle:focus {
+    outline: 0;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+}
+
+.navbar-header{
+    height:.7rem;
+    line-height:.7rem;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+    .navbar-nav {
+        float: left;
+        margin: 0;
+    }
+    .navbar-nav > li {
+        float: left;
+    }
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 }
