@@ -4,6 +4,14 @@ body{
   background-color:#fafafa;
 }
 
+a{
+    color:#fff;
+}
+
+a:hover{
+    color:#fff;
+}
+
 header {
   background-color: #fff;
   position: relative;
