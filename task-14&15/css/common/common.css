@@ -22,6 +22,11 @@ header {
     float: right;
     display: flex;
     align-items: center; }
+    header .share a {
+      margin: .05rem; }
+      header .share a img {
+        width: .18rem;
+        height: .18rem; }
 
 .nav-bgColor {
   background-color: #29B078; }

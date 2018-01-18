@@ -1,36 +1,10 @@
 
-body{
-    background-color:#fafafa;
-}
-
-
 main{
     margin-bottom:2rem;
 }
 
 
 
-.nav-a{
-    height:.7rem;
-    line-height:.7rem!important;
-    margin:0;
-    padding:0!important;
-    color:#fff!important;
-    text-align:center;
-}
-.nav-a:hover{
-    background-color:#26A26F!important;
-    border-bottom:3px solid #fff;
-    color:#fff;
-    transition-duration:.4s;
-    border-radius:0;
-}
-
-@media(min-width:768px){
-    .nav-a {
-        width:.7rem;
-    }
-}
 
 
 .left-list-item>a{

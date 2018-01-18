@@ -1,9 +1,38 @@
+.collapse {
+    display: none;
+}
+.collapse.in {
+    display: block;
+}
+
+.collapsing {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-duration: .35s;
+    -o-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transition-property: height, visibility;
+    -o-transition-property: height, visibility;
+    transition-property: height, visibility;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
 
 /*导航栏*/
-nav{
-    display: block;
 
-}
 .nav {
     padding-left: 0;
     margin-bottom: 0;
@@ -42,12 +71,12 @@ nav{
 .navbar {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
+    /*去除了margin-bottom值，去除了边框*/
 }
 @media (min-width: 768px) {
     .navbar {
         border-radius: 4px;
+
     }
 }
 @media (min-width: 768px) {
@@ -56,8 +85,9 @@ nav{
     }
 }
 .navbar-collapse {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;*/
+    /*padding-left: 15px;*/    /* 去除padding*/
+
     overflow-x: visible;
     -webkit-overflow-scrolling: touch;
     border-top: 1px solid transparent;
@@ -73,6 +103,7 @@ nav{
         border-top: 0;
         -webkit-box-shadow: none;
         box-shadow: none;
+        float:right;
     }
     .navbar-collapse.collapse {
         display: block !important;
@@ -103,55 +134,8 @@ nav{
         }
     }
 
-    .navbar-brand {
-        float: left;
-        height: 50px;
-        padding: 15px 15px;
-        font-size: 18px;
-        line-height: 20px;
-    }
-    .navbar-brand:hover,
-    .navbar-brand:focus {
-        text-decoration: none;
-    }
-    .navbar-brand > img {
-        display: block;
-    }
-    @media (min-width: 768px) {
-        .navbar > .container .navbar-brand,
-        .navbar > .container-fluid .navbar-brand {
-            margin-left: -15px;
-        }
-    }
-    .navbar-toggle {
-        position: relative;
-        float: right;
-        padding: 9px 10px;
-        margin-top: 8px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-    .navbar-toggle:focus {
-        outline: 0;
-    }
-    .navbar-toggle .icon-bar {
-        display: block;
-        width: 22px;
-        height: 2px;
-        border-radius: 1px;
-    }
-    .navbar-toggle .icon-bar + .icon-bar {
-        margin-top: 4px;
-    }
-    @media (min-width: 768px) {
-        .navbar-toggle {
-            display: none;
-        }
-    }
+
+
     .navbar-nav {
         margin: 7.5px -15px;
     }
@@ -159,29 +143,6 @@ nav{
         padding-top: 10px;
         padding-bottom: 10px;
         line-height: 20px;
-    }
-    @media (max-width: 767px) {
-        .navbar-nav .open .dropdown-menu {
-            position: static;
-            float: none;
-            width: auto;
-            margin-top: 0;
-            background-color: transparent;
-            border: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        }
-        .navbar-nav .open .dropdown-menu > li > a,
-        .navbar-nav .open .dropdown-menu .dropdown-header {
-            padding: 5px 15px 5px 25px;
-        }
-        .navbar-nav .open .dropdown-menu > li > a {
-            line-height: 20px;
-        }
-        .navbar-nav .open .dropdown-menu > li > a:hover,
-        .navbar-nav .open .dropdown-menu > li > a:focus {
-            background-image: none;
-        }
     }
     @media (min-width: 768px) {
         .navbar-nav {
@@ -218,7 +179,7 @@ nav{
 }
 
 .navbar-default {
-    background-color: #f8f8f8;
+    background-color: #29B078;
     border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -233,13 +194,26 @@ nav{
     color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+/*color: #777;*/
+height:.7rem;
+line-height:.7rem;
+margin:0;
+padding:0;
+color:#fff;
+text-align:center;
 }
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #333;
-    background-color: transparent;
+.navbar-default .navbar-nav > li > a:hover{
+background-color:#26A26F;
+border-bottom:3px solid #fff;
+color:#fff;
+transition-duration:.4s;
+border-radius:0;}
+@media(min-width:768px){
+.navbar-default .navbar-nav > li > a {
+width:.7rem;
 }
+}
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -257,59 +231,94 @@ nav{
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #ddd;
+    background-color: #2E8B57;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #888;
+    background-color: #fff;
 }
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
+.navbar-default .navbar-collapse {
     border-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background-color: #e7e7e7;
+
+
+
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after{
+    display: table;
+    content: " ";
 }
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+
+.container:after,
+.container-fluid:after,
+.row:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after{
+    clear: both;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 17px 10px; /*  改变icon-bar的间距及颜色，设置了navbar-toggle：hover的颜色*/
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    background-image: none;
+    /*border: 1px solid transparent;*/
+    border-radius: 4px;
+    top:.09rem;
+}
+
+
+
+
+.navbar-toggle:focus {
+    outline: 0;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+}
+
+.navbar-header{
+    height:.7rem;
+    line-height:.7rem;
+}
+
+
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #333;
-        background-color: transparent;
+    .navbar-nav {
+        float: left;
+        margin: 0;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #555;
-        background-color: #e7e7e7;
+    .navbar-nav > li {
+        float: left;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-        color: #ccc;
-        background-color: transparent;
+    .navbar-nav > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
-}
-.navbar-default .navbar-link {
-    color: #777;
-}
-.navbar-default .navbar-link:hover {
-    color: #333;
-}
-.navbar-default .btn-link {
-    color: #777;
-}
-.navbar-default .btn-link:hover,
-.navbar-default .btn-link:focus {
-    color: #333;
-}
-.navbar-default .btn-link[disabled]:hover,
-fieldset[disabled] .navbar-default .btn-link:hover,
-.navbar-default .btn-link[disabled]:focus,
-fieldset[disabled] .navbar-default .btn-link:focus {
-    color: #ccc;
 }

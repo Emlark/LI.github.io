@@ -10,7 +10,7 @@ button {border:0 none;outline:none;background-color:transparent;cursor:pointer} 
 
 body {background:#fff;overflow-x: hidden;}   /* 重置body 页面背景为白色 */
 
-body,th,td,input,select,textarea,button {font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */
+th,td,input,select,textarea,button {font-family:"微软雅黑", "黑体","宋体";color:#666} /* 重置页面文字属性 */
 
 table {border-collapse:collapse;}    /* 重置table属性 */
 
@@ -18,7 +18,7 @@ table {border-collapse:collapse;}    /* 重置table属性 */
 /* 页面设置 */
 
 /* 取消a标签点击后的虚线框 */
-a {outline: none;color:#666;text-decoration:none}
-a:active, a:hover {text-decoration:none}   /* 重置链接a标签的鼠标滑动效果 */
+a {outline: none;text-decoration:none}
+/*a:active, a:hover {text-decoration:none}   !* 重置链接a标签的鼠标滑动效果 *!*/
 
 

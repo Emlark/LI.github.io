@@ -26,6 +26,15 @@ header{
       float: right;
       display:flex;
       align-items:center;
+
+       a{
+        margin: .05rem;
+
+         img{
+           width:.18rem;height:.18rem;
+         }
+
+      }
     }
 }
 

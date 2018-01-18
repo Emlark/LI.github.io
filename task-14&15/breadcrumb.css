@@ -1,0 +1,23 @@
+﻿/*面包屑*/
+.breadcrumb {
+    padding: 8px 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 4px;
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb > li a{
+    color:#777;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
+}
+.breadcrumb > .active {
+    color: #82D0B0;
+}
