@@ -123,3 +123,9 @@ footer {
         margin: 0; }
 
 /*# sourceMappingURL=common.css.map */
+
+
+.img-self-adapt {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
